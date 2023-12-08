@@ -2,3 +2,13 @@
   padding: 20px;
   font-family: "Poppins";
 }
+
+.nav_container_div h1 span {
+  color: #f53ca0;
+}
+
+@media (max-width: 750px) {
+  .nav_container_div {
+    padding: 10px;
+  }
+}
