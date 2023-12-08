@@ -1,7 +1,11 @@
 import Link from "next/link";
 import styles from "./index.module.css";
 
+import { useState } from "react";
+
 const index = () => {
+  const [isTap, setIsTap] = useState(false);
+
   return (
     <div className={styles.nav_container_div}>
       {/* logo div */}
@@ -39,8 +43,8 @@ const index = () => {
         <i className="fa fa-wallet"></i>Connect Wallet
       </div>
 
-      <div className={styles.ham_parent_container}>
-        <div className={styles.ham_open}></div>
+      <div className={styles.ham_parent_container} onClick={() => setIsTap(!isTap)}>
+        <div className={isTap ? styles.ham_open : styles.ham}></div>
       </div>
     </div>
   );
