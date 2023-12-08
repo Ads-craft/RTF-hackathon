@@ -1,10 +1,68 @@
 .nav_container_div {
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-family: "Poppins";
 }
 
+.nav_container_div h1 {
+  color: var(--color-light-blue);
+}
+
 .nav_container_div h1 span {
-  color: #f53ca0;
+  color: var(--color-light-pink);
+}
+
+.links_container_div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.links_container_div h1 {
+  font-size: 18px;
+  margin: 0px 20px;
+}
+
+.links_container_div h1 a {
+  color: var(--color-white);
+  text-decoration: none;
+  transition: 0.3s;
+  position: relative;
+}
+
+.links_container_div h1 a::after {
+  content: "";
+  height: 4px;
+  width: 0px;
+  background: var(--color-light-blue);
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.links_container_div h1 a:hover {
+  color: var(--color-light-blue);
+}
+
+.links_container_div h1 a:hover:after {
+  width: 50px;
+}
+
+.btn_container_div {
+  border-radius: 7px;
+  background: var(--gradient-color-1);
+  padding: 13px 20px;
+  border: 1px;
+  width: max-content;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.btn_container_div i {
+  margin-right: 8px;
 }
 
 @media (max-width: 750px) {

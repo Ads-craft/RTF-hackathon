@@ -1,3 +1,4 @@
+import "../styles/globals.css";
 import BaseLayout from "./BaseLayout";
 
 export default function App({ Component, pageProps }) {

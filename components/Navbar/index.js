@@ -10,14 +10,27 @@ const index = () => {
         </h1>
       </div>
 
-      {/* link wallet button main container */}
       {/* link container */}
-
-      <div></div>
+      <div className={styles.links_container_div}>
+        <h1>
+          <a href="#">Home</a>
+        </h1>
+        <h1>
+          <a href="#">Marketplace</a>
+        </h1>
+        <h1>
+          <a href="#">Explore</a>
+        </h1>
+        <h1>
+          <a href="#">Signin</a>
+        </h1>
+      </div>
 
       {/* wallet btn container */}
 
-      <div></div>
+      <div className={styles.btn_container_div}>
+        <i className="fa fa-wallet"></i>Connect Wallet
+      </div>
     </div>
   );
 };
