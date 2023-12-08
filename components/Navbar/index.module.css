@@ -65,6 +65,12 @@
   margin-right: 8px;
 }
 
+
+@media(max-width:750px){
+  .links_container_div,.btn_container_div{
+    display:none;
+  }
+}
 @media (max-width: 750px) {
   .nav_container_div {
     padding: 10px;
