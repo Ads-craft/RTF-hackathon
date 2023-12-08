@@ -6,7 +6,7 @@ const index = () => {
     <div className={styles.nav_container_div}>
       {/* logo div */}
       <div>
-        <Link href="/">
+        <Link style={{ textDecoration: "none" }} href="/">
           <h1>
             Ad<span className="text-light-pink">craft</span>
           </h1>
@@ -40,7 +40,7 @@ const index = () => {
       </div>
 
       <div className={styles.ham_parent_container}>
-        <div className={styles.ham}></div>
+        <div className={styles.ham_open}></div>
       </div>
     </div>
   );
