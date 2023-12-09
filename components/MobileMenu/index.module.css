@@ -57,6 +57,7 @@
   width: max-content;
   color: var(--color-white);
   cursor: pointer;
+  margin: 20px 12px;
   position: absolute;
   bottom: 0px;
 }
