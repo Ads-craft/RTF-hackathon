@@ -5,6 +5,8 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body>
+        <div id='backdrop-root'></div>
+        <div id='modal-root'></div>
         <Main />
         <NextScript />
       </body>
