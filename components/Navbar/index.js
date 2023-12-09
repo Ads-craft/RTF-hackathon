@@ -3,7 +3,7 @@ import styles from "./index.module.css";
 
 import { useState } from "react";
 
-const index = () => {
+const index = ({ isTapped, setIsTapped }) => {
   const [isTap, setIsTap] = useState(false);
 
   return (
@@ -19,7 +19,7 @@ const index = () => {
 
       {/* link container */}
       <div className={styles.links_container_div}>
-        <Link href="/">
+        <Link style={{ textDecoration: "none" }} href="/">
           <h1>
             <a href="#">Home</a>
           </h1>
@@ -30,7 +30,7 @@ const index = () => {
         <h1>
           <a href="#">Explore</a>
         </h1>
-        <Link href="auth/signin">
+        <Link style={{ textDecoration: "none" }} href="auth/signin">
           <h1>
             <a href="#">Signin</a>
           </h1>
@@ -43,8 +43,11 @@ const index = () => {
         <i className="fa fa-wallet"></i>Connect Wallet
       </div>
 
-      <div className={styles.ham_parent_container} onClick={() => setIsTap(!isTap)}>
-        <div className={isTap ? styles.ham_open : styles.ham}></div>
+      <div
+        className={styles.ham_parent_container}
+        onClick={() => setIsTapped(!isTapped)}
+      >
+        <div className={isTapped ? styles.ham_open : styles.ham}></div>
       </div>
     </div>
   );
