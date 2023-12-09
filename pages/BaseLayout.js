@@ -3,18 +3,13 @@ import { useState, useEffect } from "react";
 
 import Navbar from "../components/Navbar";
 import MobileMenu from "../components/MobileMenu";
+import FootNavbar from "../components/FootNavbar";
 
 const index = ({ children }) => {
   const [isTapped, setIsTapped] = useState(false);
   return (
     <>
       <Head>
-        {/*   <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-          rel="stylesheet"
-        />*/}
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -26,6 +21,7 @@ const index = ({ children }) => {
       <Navbar isTapped={isTapped} setIsTapped={setIsTapped} />
       <div>{children}</div>
       <MobileMenu isTapped={isTapped} />
+      <FootNavbar />
     </>
   );
 };

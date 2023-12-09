@@ -12,7 +12,7 @@ const index = ({ isTapped, setIsTapped }) => {
       <div>
         <Link style={{ textDecoration: "none" }} href="/">
           <h1>
-            Ad<span className="text-light-pink">craft</span>
+            Ad<span className="text-light-pink">Craft</span>
           </h1>
         </Link>
       </div>

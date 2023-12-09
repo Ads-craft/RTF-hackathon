@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 :root {
@@ -9,6 +10,7 @@
   --color-light-pink: #f53ca0;
   --color-light-blue: #5fd8ff;
   --bg-color: #101827;
+  --footer-bg-color: #01132d;
   --gradient-color-1: linear-gradient(to bottom, #5ce1e6, #f53ca0);
 }
 
@@ -21,7 +23,6 @@ body {
   margin: 0;
   background-color: var(--bg-color);
   font-family: "Poppins", sans-serif;
-  padding: 20px 40px;
 }
 
 ::-webkit-scrollbar {
@@ -43,6 +44,5 @@ body {
 
 @media (max-width: 750px) {
   body {
-    padding: 10px 20px;
   }
 }
