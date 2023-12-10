@@ -8,10 +8,26 @@ const HomePage = () => {
         <div>
           <p className="text-bold text-gray-50">Hello world</p>
         </div>
+        <div className={styles.logo_container}>
+          <img src={"/tiktok.svg"} />
+          <img src={"/dalle.svg"} />
+          <img src={"/gpt_4.svg"} />
+          <img src={"/chain_logo.svg"} />
+        </div>
         <div className={styles.ai_container}>
-          <div>
-            <div></div>
-            <div></div>
+          <div className={styles.empowerment_container}>
+            <div className={styles.emain_info_container}>
+              <h1>Empowerment</h1>
+              <p>
+                Provide creators with a platform to monetize their creativity by
+                leveraging the reach and engagement of TikTok Ads and their
+                innovative potential of NFTs.
+              </p>
+              <button>Get Started</button>
+            </div>
+            <div>
+              <img src={"/emp_img.png"} />
+            </div>
           </div>
           <h1>
             Generate <span>TikTok</span> Ads using <span>AI</span>
