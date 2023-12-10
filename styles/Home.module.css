@@ -36,7 +36,7 @@
   color: var(--color-white);
   background: linear-gradient(
     var(--color-light-pink),
-    var(--form-color),
+    #cbd5e1,
     var(--color-light-pink)
   );
   border: none;
@@ -45,20 +45,26 @@
   cursor: pointer;
 }
 
+.empowerment_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .emain_info_container {
   color: var(--color-white);
   text-align: left;
   padding: 20px 40px;
 }
 
+.emain_info_container h1 {
+  color: var(--get-started-btn-color);
+}
+
 .emain_info_container button {
   width: 170px;
   height: 64px;
-  background: linear-gradient(
-    top bottom,
-    var(--color-white),
-    var(--color-light-blue)
-  );
+  background: var(--color-light-blue);
 }
 
 .goal_container {
@@ -124,5 +130,9 @@
 
   .emain_info_container {
     padding: 10px 20px;
+  }
+
+  .empowerment_container {
+    display: block;
   }
 }
