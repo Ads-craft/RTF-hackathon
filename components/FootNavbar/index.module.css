@@ -5,7 +5,7 @@
 
 .main_info_footnavbar {
   display: flex;
-  justify: space-around;
+  justify: space-between;
   align-items: flex-start;
   width: 100%;
 }

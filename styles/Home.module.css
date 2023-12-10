@@ -1,9 +1,9 @@
 .main_info_container {
   color: var(--color-white);
   text-align: left;
-  padding:20px 40px;
+  padding: 20px 40px;
+  max-width: 50%;
 }
-
 
 .main_info_container button {
   width: 170px;
@@ -11,14 +11,12 @@
   background: var(--color-light-blue);
   box-shadow: 0 10px 0 0 var(--color-black);
   cursor: pointer;
-  border:none;
-  border-radius:10px;
-  font-size:18px;
-  font-weight:800;
-color:var(--color-white);
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--color-white);
 }
-
-
 
 .main_info_container h1 span {
   color: var(--color-light-pink);
@@ -30,6 +28,7 @@ color:var(--color-white);
   align-items: center;
   padding: 25px 20px;
   background: var(--footer-bg-color);
+  transform: scale(0.5);
 }
 
 .ai_container {
@@ -81,6 +80,7 @@ color:var(--color-white);
   color: var(--color-white);
   text-align: left;
   padding: 20px 40px;
+  max-width: 50%;
 }
 
 .emain_info_container h1 {
@@ -135,9 +135,10 @@ color:var(--color-white);
 }
 
 @media (max-width: 750px) {
-  .main_info_container{
-    padding:10px 20px;
-    padding-bottom:40px;
+  .main_info_container {
+    padding: 10px 20px;
+    padding-bottom: 40px;
+    max-width: 100%;
   }
 
   .logos_container {
@@ -163,9 +164,11 @@ color:var(--color-white);
 
   .emain_info_container {
     padding: 10px 20px;
+    max-width: 100%;
   }
 
   .empowerment_container {
     display: block;
+    max-width: 100%;
   }
 }
