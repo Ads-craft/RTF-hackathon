@@ -1,4 +1,5 @@
 import styles from "./index.module.css";
+import arrow_svg from "../../public/arrow.svg";
 
 const index = () => {
   return (
@@ -22,7 +23,7 @@ const index = () => {
           <div className={styles.footnavbar_tab_form}>
             <input type="text" placeholder="send us a mail" />
             <button>
-              <i className="fa fa-arrow-right"></i>
+              <img src={"../../public/images/arrow.png"} />
             </button>
           </div>
         </div>

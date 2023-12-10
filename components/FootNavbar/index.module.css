@@ -52,12 +52,13 @@
   font-family: "Poppins";
   padding: 10px;
   width: 200px;
+  background: var(--form-color);
 }
 
 .footnavbar_tab_form button {
   border-radius: 0 8px 8px 0;
   border: none;
-  background: var(--color-light-pink);
+  background: var(--color-white);
   padding: 10px;
   text-align: center;
   color: var(--color-white);
