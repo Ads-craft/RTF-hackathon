@@ -47,7 +47,7 @@
 }
 
 .footnavbar_tab_form input {
-  border-radius: 8px 0 0 8px;
+  border-radius: 25px;
   border: none;
   font-family: "Poppins";
   padding: 10px;
@@ -59,9 +59,21 @@
   border-radius: 0 8px 8px 0;
   border: none;
   background: var(--color-white);
-  padding: 10px;
   text-align: center;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--color-white);
+  position: relative;
+  left: -35px;
+}
+
+.footnavbar_tab_form button svg {
+  width: 20px;
+  height: 20px;
 }
 
 .copyright_container {
@@ -71,7 +83,7 @@
 }
 
 .copyright_container h1 {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .footnavbar_tab_2 {

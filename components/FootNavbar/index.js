@@ -1,5 +1,4 @@
 import styles from "./index.module.css";
-import arrow_svg from "../../public/arrow.svg";
 
 const index = () => {
   return (
@@ -23,7 +22,7 @@ const index = () => {
           <div className={styles.footnavbar_tab_form}>
             <input type="text" placeholder="send us a mail" />
             <button>
-              <img src={"../../public/images/arrow.png"} />
+              <img src={"/arrow.svg"} />
             </button>
           </div>
         </div>
@@ -67,7 +66,7 @@ const index = () => {
       </div>
       <hr />
       <div className={styles.copyright_container}>
-        <h1>© Copyright by AdCraft</h1>
+        <h1>© Copyright by AdCraft | Powered by whyds </h1>
       </div>
     </div>
   );

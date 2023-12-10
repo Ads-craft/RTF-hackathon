@@ -1,0 +1,23 @@
+.container {
+  text-align: center;
+}
+
+.container div {
+  width: 100%;
+}
+.container div {
+  height: 40px;
+  width: 40px;
+  color: var(--color-white);
+  background: var(--color-light-blue);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+}
+
+.container p {
+  color: var(--color-light-blue);
+  margin-top: 10px;
+}
