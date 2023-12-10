@@ -5,10 +5,19 @@ const HomePage = () => {
   return (
     <>
       <div>
-        <div>
-          <p className="text-bold text-gray-50">Hello world</p>
+        <div className={styles.main_info_container}>
+          <h1>
+            Our One_Stop Shop for Effortless <span>TikTok</span> Ads
+          </h1>
+          <p>
+            The Ultimate TikTok Ads and NFT Creation Platform that empower yout
+            to effortlessly create captivating TikTom ads and and design
+            stunning digitial accessoires ad NFT featuring AI - generated
+            characters.
+          </p>
+          <button>Get Started</button>
         </div>
-        <div className={styles.logo_container}>
+        <div className={styles.logos_container}>
           <img src={"/tiktok.svg"} />
           <img src={"/dalle.svg"} />
           <img src={"/gpt_4.svg"} />

@@ -82,9 +82,11 @@
   width: 100%;
 }
 
-.copyright_container h1 {
+/*.copyright_container h1 {
+  
   font-size: 14px;
 }
+*/
 
 .footnavbar_tab_2 {
   color: var(--color-white);

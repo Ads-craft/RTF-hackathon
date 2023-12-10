@@ -66,7 +66,7 @@ const index = () => {
       </div>
       <hr />
       <div className={styles.copyright_container}>
-        <h1>© Copyright by AdCraft | Powered by whyds </h1>
+        <p>© Copyright by AdCraft | Powered by whyds </p>
       </div>
     </div>
   );

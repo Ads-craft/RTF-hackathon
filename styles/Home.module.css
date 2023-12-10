@@ -1,4 +1,30 @@
-.logo_container {
+.main_info_container {
+  color: var(--color-white);
+  text-align: left;
+  padding:20px 40px;
+}
+
+
+.main_info_container button {
+  width: 170px;
+  height: 64px;
+  background: var(--color-light-blue);
+  box-shadow: 0 10px 0 0 var(--color-black);
+  cursor: pointer;
+  border:none;
+  border-radius:10px;
+  font-size:18px;
+  font-weight:800;
+color:var(--color-white);
+}
+
+
+
+.main_info_container h1 span {
+  color: var(--color-light-pink);
+}
+
+.logos_container {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -65,6 +91,8 @@
   width: 170px;
   height: 64px;
   background: var(--color-light-blue);
+  box-shadow: 0 10px 0 0 var(--color-black);
+  cursor: pointer;
 }
 
 .goal_container {
@@ -107,7 +135,12 @@
 }
 
 @media (max-width: 750px) {
-  .logo_container {
+  .main_info_container{
+    padding:10px 20px;
+    padding-bottom:40px;
+  }
+
+  .logos_container {
     flex-wrap: wrap;
   }
 
@@ -124,7 +157,7 @@
     font-size: 16px;
   }
 
-  .logo_container img {
+  .logos_container img {
     transform: scale(0.5);
   }
 
