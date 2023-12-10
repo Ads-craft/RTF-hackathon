@@ -7,6 +7,7 @@
   display: flex;
   justify: space-around;
   align-items: flex-start;
+  width: 100%;
 }
 
 .footnavbar_tab_1 {

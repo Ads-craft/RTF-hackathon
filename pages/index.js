@@ -50,6 +50,7 @@ const HomePage = () => {
           <img src="/chain_logo.svg" />
           <h1>
             We utilize <span>chainlink</span> oracles for reliable external data
+            <br />
             sources in NFT <span>attributes</span> and transaction information
           </h1>
           <div className={styles.title_container}>
