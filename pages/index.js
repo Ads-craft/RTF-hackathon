@@ -9,7 +9,7 @@ const HomePage = () => {
           <h1>
             Our One_Stop Shop for Effortless <span>TikTok</span> Ads
           </h1>
-          <p>
+          <p className="mb-10">
             The Ultimate TikTok Ads and NFT Creation Platform that empower yout
             to effortlessly create captivating TikTom ads and and design
             stunning digitial accessoires ad NFT featuring AI - generated

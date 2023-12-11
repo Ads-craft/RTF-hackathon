@@ -26,10 +26,13 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 25px 20px;
+  padding: 10px 20px;
+  margin:40px 0px;
   background: var(--footer-bg-color);
-  transform: scale(0.5);
 }
+
+
+.logos_container img{transform:scale(0.5);}
 
 .ai_container {
   text-align: center;
@@ -72,7 +75,7 @@
 
 .empowerment_container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
 }
 
@@ -80,7 +83,7 @@
   color: var(--color-white);
   text-align: left;
   padding: 20px 40px;
-  max-width: 50%;
+  max-width: 40%;
 }
 
 .emain_info_container h1 {

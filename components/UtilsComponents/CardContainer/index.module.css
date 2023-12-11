@@ -1,0 +1,29 @@
+
+.card_bottom_wrapper{
+  max-width:320px;
+  border-radius:0 0 5px 5px;
+}
+
+.card_bottom{
+  border-radius:0 0 5px 5px;
+  box-shadow: 0 1px 0 var(--color-light-blue); 
+  height:180px;
+  position:relative;
+  margin:auto auto;
+  width:314px;
+  background:var(--card-color-transparent);
+  border-width:2px;
+  border-style:solid;
+  border-image:linear-gradient(var(--card-color),var(--color-light-blue)) 5;
+}
+
+.card_bottom_header{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:14px;
+  }
+
+.card_bottom_header div:nth-child(1){
+
+}

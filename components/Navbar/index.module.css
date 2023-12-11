@@ -12,6 +12,7 @@
 }
 
 .nav_container_div h1 {
+  font-size:35px;
   color: var(--color-light-blue);
 }
 

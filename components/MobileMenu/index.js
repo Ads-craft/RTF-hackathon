@@ -55,6 +55,8 @@ const index = ({ isTapped }) => {
           )}
 
           {isTapped && (
+<Link style={{ textDecoration: "none" }} href="explore">
+         
             <motion.h1
               initial="hidden"
               animate="visible"
@@ -66,6 +68,7 @@ const index = ({ isTapped }) => {
             >
               <a href="#">explore</a>
             </motion.h1>
+            </Link>
           )}
 
           {isTapped && (

@@ -11,7 +11,7 @@ const index = ({ isTapped, setIsTapped }) => {
       {/* logo div */}
       <div>
         <Link style={{ textDecoration: "none" }} href="/">
-          <h1>
+          <h1 className="font-extrabold txt-2xl">
             Ad<span className="text-light-pink">Craft</span>
           </h1>
         </Link>
@@ -27,9 +27,14 @@ const index = ({ isTapped, setIsTapped }) => {
         <h1>
           <a href="#">Marketplace</a>
         </h1>
+<Link style={{ textDecoration: "none" }} href="explore">
+ 
         <h1>
+        
           <a href="#">Explore</a>
-        </h1>
+       </h1>
+ </Link>
+    
         <Link style={{ textDecoration: "none" }} href="auth/signin">
           <h1>
             <a href="#">Signin</a>

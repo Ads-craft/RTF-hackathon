@@ -106,7 +106,7 @@ const SignIn = () => {
             {isLoading &&
                 createPortal(<Spinner />, document.getElementById("backdrop-root"))}
             <div
-                className="flex flex-row justify-center h-screen items-center mx-auto"
+                className="bg-white flex flex-row justify-center h-screen items-center mx-auto"
                 style={{ maxWidth: "1140px" }}
             >
                 <div className="relative hidden md:block md:w-1/2">

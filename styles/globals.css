@@ -1,71 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/*@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
-:root {
-  --color-white: #fff;
-  --color-black: #000;
-  --color-light-pink: #f53ca0;
-  --color-light-blue: #5fd8ff;
-  --bg-color: #101827;
-  --get-started-btn-color: #79d8f1;
-  --footer-bg-color: #030d22;
-  --form-color: #f5f5f5;
-  --color-title-icon: #404040;
-  --gradient-color-1: linear-gradient(to bottom, #5ce1e6, #f53ca0);
-}
-
-* {
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  margin: 0;
-  background-color: var(--bg-color);
-  font-family: "Poppins", sans-serif;
-}
-
-::-webkit-scrollbar {
-  width: 3px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #888;
-  border-radius: 6px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #555;
-}
-
-@media (max-width: 750px) {
-  .loader {
-    width: 48px;
-    height: 48px;
-    border: 5px solid #fff;
-    border-bottom-color: #f53ca0;
-    border-radius: 50%;
-    display: inline-block;
-    box-sizing: border-box;
-    animation: rotation 1s linear infinite;
-    position: absolute;
-    top: 40vh;
-    z-index: 50;
-  }
-
-  @keyframes rotation {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-}
+@import "./base.css";
