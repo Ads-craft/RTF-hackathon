@@ -1,15 +1,33 @@
 
-import styles from  "./index.module.css";
-const index = ({ imgUrl,ethPrice,views,likes}) => {
-  return( 
-    <div>
-    <div className={styles.card_bottom_wrapper}>
-    <div className={styles.card_bottom}>
-    <div><h3>Floor Price</h3></div>
-    
-   </div>
-  </div>
-  </div>);
+
+import styles from "./index.module.css";
+import { motion } from "framer-motion";
+
+const index = ({ title,imgUrl, ethPrice, views, likes,is_stake }) => {
+  return (
+    <div className={styles.card}>
+<div className={styles.card_top}>
+    <img src={imgUrl} />
+    </div>
+      <div className={styles.card_bottom}>
+        <h1>{ title ? title : "MustardFaceNFT" }</h1>
+        <div className={styles.card_bottom_info_div}>
+          <div>
+            <h3>Floor Price:</h3>
+            <h2>{ethPrice} Eth</h2>
+          </div>
+          <motion.div whileTap={{ scale:1.2 }} style={{ outline:"none" }}>
+             <div className={styles.card_btn_div}>{ is_stake ? "Stake Now":"Buy"}</div>
+          </motion.div>
+        </div>
+    { is_stake && (
+        <div className={styles.stats}>
+          <p><i className="fa fa-eye"></i> {views}M Views</p>
+          <p><i className="fa fa-heart"></i> {likes}M Likes</p>
+        </div>)}
+      </div>
+    </div>
+  );
 };
 
 export default index;

@@ -1,29 +1,93 @@
-
-.card_bottom_wrapper{
-  max-width:320px;
-  border-radius:0 0 5px 5px;
-}
-
-.card_bottom{
-  border-radius:0 0 5px 5px;
-  box-shadow: 0 1px 0 var(--color-light-blue); 
-  height:180px;
-  position:relative;
+.card{
   margin:auto auto;
-  width:314px;
-  background:var(--card-color-transparent);
-  border-width:2px;
-  border-style:solid;
-  border-image:linear-gradient(var(--card-color),var(--color-light-blue)) 5;
+  width:max-content;
 }
 
-.card_bottom_header{
+.card_top img{
+  width:314px;
+}
+
+.card_bottom {
+  position: relative;
+  width: 314px;
+  height: 147px;
+  background: var(--card-color-transparent);
+  border-radius: 0 0 5px 5px;
+  border: double 2px transparent;
+  border-style: solid;
+  background-image: linear-gradient(
+      var(--card-color-transparent),
+      var(--card-color-transparent)
+    ),
+    linear-gradient(var(--card-color), var(--color-light-blue));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  text-align: left;
+}
+
+.card_bottom h1 {
+  color: var(--color-white);
+  font-size: 24px;
+  text-transform: capitalize;
+  margin-bottom:-10px;
+  padding:8px;
+  margin-top:-6px 
+}
+
+.card_bottom_info_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-white);
+  padding:8px;
+}
+
+.card_bottom_info_div div:nth-child(1) h3{
+  font-size:16px;
+  color:var(--color-white);
+  margin-bottom:0;
+}
+
+.card_bottom_info_div div:nth-child(1) h2{
+  font-size:21px;
+  color:var(--nft-card-text-color);
+  margin:0;
+}
+
+
+.card_btn_div{
+  width:146px;
+  height:50px;
   display:flex;
   justify-content:center;
   align-items:center;
-  font-size:14px;
-  }
+  paddong:12px 8px;
+  cursor:pointer;
+  background:var(--card-color-transparent);
+  font-weight:800;
+  color:var(--color-white);
+  font-size:26px;
+  border-radius:8px;
+  border: double 3px transparent;
+  border-style: solid;
+  background-image: linear-gradient(
+      var(--card-color-transparent),
+      var(--card-color-transparent)
+    ),
+    linear-gradient(var(--card-color), var(--color-light-blue));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
 
-.card_bottom_header div:nth-child(1){
+.stats{
+  display:flex;
+  justify-content:left;
+  align-items:center;
+  color:var(--color-white);
+  margin-left:10px;
+  margin-top:-23px;
+}
 
+.stats p{
+  margin-right:10px;
 }

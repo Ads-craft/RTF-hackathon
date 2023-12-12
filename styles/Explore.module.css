@@ -1,0 +1,7 @@
+
+.main_explore_container{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  padding:40px 8px; 
+}

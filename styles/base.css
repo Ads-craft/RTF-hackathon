@@ -9,7 +9,8 @@
   --form-color: #f5f5f5;
   --color-title-icon: #404040;
   --card-color:#F53CA0;
-  --card-color-transparent:rgba(245, 60, 160, 0.3);
+  --card-color-transparent:#8c077a;
+  --nft-card-text-color:#5ce1e6;
   --gradient-color-1: linear-gradient(to bottom, #5ce1e6, #f53ca0);
 }
 
