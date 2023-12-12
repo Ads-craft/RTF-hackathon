@@ -5,3 +5,10 @@
   align-items:center;
   padding:40px 8px; 
 }
+
+
+@media(max-width:750px){
+  .main_explore_container{
+    display:block;
+  }
+}
