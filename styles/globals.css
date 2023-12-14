@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 /*@import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
@@ -7,3 +8,10 @@
 @tailwind components;
 @tailwind utilities;
 @import "./base.css";
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+}

@@ -8,9 +8,9 @@
   --footer-bg-color: #030d22;
   --form-color: #f5f5f5;
   --color-title-icon: #404040;
-  --card-color:#F53CA0;
-  --card-color-transparent:#8c077a;
-  --nft-card-text-color:#5ce1e6;
+  --card-color: #f53ca0;
+  --card-color-transparent: #352550;
+  --nft-card-text-color: #5ce1e6;
   --gradient-color-1: linear-gradient(to bottom, #5ce1e6, #f53ca0);
 }
 
@@ -39,7 +39,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #555;
+  background-color: var(--color-white);
 }
 
 @media (max-width: 750px) {
@@ -61,6 +61,7 @@ body {
     0% {
       transform: rotate(0deg);
     }
+
     100% {
       transform: rotate(360deg);
     }

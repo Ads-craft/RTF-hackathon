@@ -1,0 +1,11 @@
+.main_cards_container {
+  width: 100%;
+  overflow: hidden;
+  margin: 20px 10px;
+}
+
+@media (max-width: 750px) {
+  .main_cards_container {
+    margin: 20px 0px;
+  }
+}

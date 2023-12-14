@@ -1,13 +1,23 @@
-
-.main_explore_container{
-  display:flex;
-  justify-content:space-around;
-  align-items:center;
-  padding:40px 8px; 
+.main_explore_container {
+  padding: 40px 20px;
+  padding-right: 25px;
 }
 
-@media(max-width:750px){
-  .main_explore_container{
-    display:block;
+.main_explore_container h1 {
+  color: var(--color-light-blue);
+}
+
+.main_explore_container h1 span {
+  color: var(--color-light-pink);
+}
+
+.main_explore_container i {
+  color: var(--color-white);
+  margin: 0px 10px;
+}
+
+@media (max-width: 750px) {
+  .main_explore_container {
+    padding: 40px 20px;
   }
 }
