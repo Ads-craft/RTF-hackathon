@@ -56,6 +56,7 @@ const index = () => {
       is_stake: true,
     },
   ]);
+
   return (
     <div className={styles.main_explore_container}>
       <h1>

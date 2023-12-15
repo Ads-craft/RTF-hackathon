@@ -1,17 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-/*@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @import "./base.css";
 
+.swiper-pagination-bullet {
+  opacity: 0.5;
+  transition: 0.25s;
+  width: 14px;
+  height: 14px;
+  position: relative;
+  top: 12px;
+  opacity: 0.5;
+  border: 1px solid var(--color-white);
+  border-radius: 50%;
+  background-color: var(--bg-color);
+}
+
 .swiper-pagination-bullet-active {
-  background-color: #fff;
-  color: #fff;
-  width: 100px;
-  height: 100px;
+  background-color: var(--color-white);
+  width: 14px;
+  height: 14px;
+  opacity: 1;
+}
+
+.slider-controler {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.slider-controler .swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+
+.slider-arrow-r,
+.slider-arrow-l {
+  z-index: 5;
+  position: relative;
+  transform: translateY(-255px);
 }

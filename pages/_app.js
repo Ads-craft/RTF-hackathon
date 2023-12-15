@@ -1,3 +1,6 @@
+import "swiper/css";
+import "swiper/css/pagination";
+
 import "../styles/globals.css";
 
 import BaseLayout from "./BaseLayout";

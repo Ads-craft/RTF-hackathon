@@ -3,11 +3,9 @@ import { useState, useEffect } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import "swiper/css";
-import "swiper/css/pagination";
+import { Pagination, Navigation } from "swiper/modules";
 
-import { Pagination } from "swiper/modules";
-
+import "swiper/css/navigation";
 import CardContainer from "../CardContainer/";
 
 const index = ({ data }) => {
@@ -25,8 +23,13 @@ const index = ({ data }) => {
       <Swiper
         spaceBetween={isMobile ? 0 : 120}
         slidesPerView={isMobile ? 1 : 3}
-        pagination={true}
-        modules={[Pagination]}
+        pagination={{ el: ".swiper-pagination", clickable: true }}
+        navigation={{
+          nextEl: ".slider-arrow-r",
+          prevEl: ".slider-arrow-l",
+          clickable: true,
+        }}
+        modules={[Pagination, Navigation]}
       >
         {data.map((cardData, indx) => {
           return (
@@ -44,6 +47,15 @@ const index = ({ data }) => {
           );
         })}
         {!isMobile && <SwiperSlide></SwiperSlide>}
+        <div className="slider-controler">
+          <div className="slider-arrow-l">
+            <img src={"/arrow-left.svg"} />
+          </div>
+          <div className="slider-arrow-r">
+            <img src={"/arrow-right.svg"} />
+          </div>
+          <div className="swiper-pagination"></div>
+        </div>
       </Swiper>
     </div>
   );

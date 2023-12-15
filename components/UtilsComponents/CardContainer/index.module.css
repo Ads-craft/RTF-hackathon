@@ -1,7 +1,7 @@
 .card {
   margin: auto auto;
   width: max-content;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .card_top img {
@@ -17,10 +17,8 @@
   border-radius: 0 0 5px 5px;
   border: double 2px transparent;
   border-style: solid;
-  background-image: linear-gradient(
-      var(--card-color-transparent),
-      var(--card-color-transparent)
-    ),
+  background-image: linear-gradient(var(--card-color-transparent),
+      var(--card-color-transparent)),
     linear-gradient(var(--card-color), var(--color-light-blue));
   background-origin: border-box;
   background-clip: content-box, border-box;
@@ -70,10 +68,8 @@
   border-radius: 10px;
   border: double 3px transparent;
   border-style: solid;
-  background-image: linear-gradient(
-      var(--card-color-transparent),
-      var(--card-color-transparent)
-    ),
+  background-image: linear-gradient(var(--card-color-transparent),
+      var(--card-color-transparent)),
     linear-gradient(var(--card-color), var(--color-light-blue));
   background-origin: border-box;
   background-clip: content-box, border-box;
