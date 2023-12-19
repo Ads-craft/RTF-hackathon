@@ -35,14 +35,45 @@ const HomePage = () => {
               <button>Get Started</button>
             </div>
             <div>
-              <img src={"/emp_img.png"} />
+              <div>
+                <div className={styles.snippet_header}>
+                  <img src={"/rocket.svg"} />
+                  <h1>Inspire</h1>
+                </div>
+                <div className={styles.snippet_info}>
+                  <p>
+                    Leveraging TikTok's immense reach to amplify your creativity
+                    and connect with millions of potential fans
+                  </p>
+                </div>
+                <div className={styles.snippet_header}>
+                  <img src={"/pie_chart.svg"} />
+                  <h1>Analaytics</h1>
+                </div>
+                <div className={styles.snippet_info}>
+                  <p>
+                    Managing soulbound NFTs,their linked ads,and showcase thier
+                    performance amd accrued value share.
+                  </p>
+                </div>
+                <div className={styles.snippet_header}>
+                  <img src={"/swirl_box.svg"} />
+                  <h1>Engagament</h1>
+                </div>
+                <div className={styles.snippet_info}>
+                  <p>
+                    Recieve notifications about staking activties,value
+                    changes,and platforn updates.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           <h1>
             Generate <span>TikTok</span> Ads using <span>AI</span>
           </h1>
           <div>
-            <img src={"/face_img.png"} />
+            <img src={"/face_img.svg"} />
           </div>
           <button>Get Started</button>
         </div>
@@ -69,11 +100,15 @@ const HomePage = () => {
           />
           <InfoContainer
             Icon={<i className="fa fa-bolt"></i>}
-            Info={"Step into limitless creativity"}
+            Info={
+              "A revolutionary ecosystem where creativity and.commerve converge and where your advertising creations transcends mere ads to.become prized digitial collectibles.A platform for users to buy,sell,and trade NFTs derived from AI-generated ads,amplifying the value of your creative endeavors."
+            }
           />
           <InfoContainer
             Icon={<i className="fa fa-bar-chart"></i>}
-            Info={"Step into limitless creativity"}
+            Info={
+              "Unveiling Real-time Engagment Insights into the performance of your staked NFTs with our real-time engagment data dashboard.Stay informed and make informed decisions by monitoring key metrics."
+            }
           />
         </div>
       </div>

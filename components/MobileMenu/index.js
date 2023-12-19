@@ -41,33 +41,34 @@ const index = ({ isTapped }) => {
           )}
 
           {isTapped && (
-            <motion.h1
-              initial="hidden"
-              animate="visible"
-              variants={linkVariant}
-              transition={{
-                delay: 0.15,
-                type: "spring",
-              }}
-            >
-              <a href="#">marketplace</a>
-            </motion.h1>
+            <Link style={{ textDecoration: "none" }} href="marketplace">
+              <motion.h1
+                initial="hidden"
+                animate="visible"
+                variants={linkVariant}
+                transition={{
+                  delay: 0.15,
+                  type: "spring",
+                }}
+              >
+                <a href="#">marketplace</a>
+              </motion.h1>
+            </Link>
           )}
 
           {isTapped && (
-<Link style={{ textDecoration: "none" }} href="explore">
-         
-            <motion.h1
-              initial="hidden"
-              animate="visible"
-              variants={linkVariant}
-              transition={{
-                delay: 0.25,
-                type: "spring",
-              }}
-            >
-              <a href="#">explore</a>
-            </motion.h1>
+            <Link style={{ textDecoration: "none" }} href="explore">
+              <motion.h1
+                initial="hidden"
+                animate="visible"
+                variants={linkVariant}
+                transition={{
+                  delay: 0.25,
+                  type: "spring",
+                }}
+              >
+                <a href="#">explore</a>
+              </motion.h1>
             </Link>
           )}
 

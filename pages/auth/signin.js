@@ -106,11 +106,11 @@ const SignIn = () => {
             {isLoading &&
                 createPortal(<Spinner />, document.getElementById("backdrop-root"))}
             <div
-                className="bg-white flex flex-row justify-center h-screen items-center mx-auto"
+                className="tw-bg-white tw-flex tw-flex-row tw-justify-center tw-h-screen tw-items-center tw-mx-auto"
                 style={{ maxWidth: "1140px" }}
             >
-                <div className="relative hidden md:block md:w-1/2">
-                    <p className="font-bold text-light-pink absolute top-10 left-10">
+                <div className="tw-relative tw-hidden tw-md:block tw-md:w-1/2">
+                    <p className="tw-font-bold tw-text-light-pink tw-absolute tw-top-10 tw-left-10">
                         Adcraft
                     </p>
                     <Image
@@ -120,11 +120,11 @@ const SignIn = () => {
                         height={300}
                         style={{ height: "100vh", objectFit: "cover", maxHeight: "580px" }}
                     />
-                    <p className="text-white absolute bottom-5 left-10">Copyright 2023</p>
+                    <p className="tw-text-white tw-absolute tw-bottom-5 tw-left-10">Copyright 2023</p>
                 </div>
 
                 <div
-                    className="flex flex-col justify-center md:h-screen px-5 md:w-1/2"
+                    className="tw-flex tw-flex-col tw-justify-center tw-md:h-screen tw-px-5 tw-md:w-1/2"
                     style={{ maxWidth: "720px", maxHeight: "580px" }}
                 >
                     {/* <div className="flex flex-row gap-3 items-center justify-between md:justify-end mb-5 md:me-8">
@@ -142,7 +142,7 @@ const SignIn = () => {
                     </div>
                     <form className="">
                         <div
-                            className="w-10/12 mx-auto mt-5 relative"
+                            className="tw-w-10/12 tw-mx-auto tw-mt-5 tw-relative"
                             style={{ width: "100%", maxWidth: "405px" }}
                         >
                             {!emailIsValid && (

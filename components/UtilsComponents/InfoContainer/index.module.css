@@ -1,11 +1,13 @@
 .container {
   max-width: 350px;
   text-align: center;
+  margin: 10px 20px;
 }
 
 .container div {
   width: 100%;
 }
+
 .container div {
   height: 40px;
   width: 40px;

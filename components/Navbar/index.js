@@ -24,17 +24,17 @@ const index = ({ isTapped, setIsTapped }) => {
             <a href="#">Home</a>
           </h1>
         </Link>
-        <h1>
-          <a href="#">Marketplace</a>
-        </h1>
-<Link style={{ textDecoration: "none" }} href="explore">
- 
-        <h1>
-        
-          <a href="#">Explore</a>
-       </h1>
- </Link>
-    
+        <Link style={{ textDecoration: "none" }} href="marketplace">
+          <h1>
+            <a href="#">Marketplace</a>
+          </h1>
+        </Link>
+        <Link style={{ textDecoration: "none" }} href="explore">
+          <h1>
+            <a href="#">Explore</a>
+          </h1>
+        </Link>
+
         <Link style={{ textDecoration: "none" }} href="auth/signin">
           <h1>
             <a href="#">Signin</a>

@@ -13,7 +13,7 @@
 .footnavbar_tab_1 {
   text-align: left;
   width: 350px;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 .footnavbar_tab_1 h1 {
@@ -53,7 +53,7 @@
   border: none;
   font-family: "Poppins";
   padding: 10px;
-  width: 200px;
+  width: 285px;
   background: var(--form-color);
 }
 
@@ -94,7 +94,7 @@
   color: var(--color-white);
   width: 350px;
   text-align: center;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 .footnavbar_tab_2_info h1 {
@@ -116,13 +116,13 @@
     padding: 10px 20px;
   }
 
-  .footnavbar_tab_1{
-    margin:0;
+  .footnavbar_tab_1 {
+    margin: 0;
   }
 
   .footnavbar_tab_2 {
     text-align: left;
-    margin:0;
+    margin: 0;
   }
 
   .main_info_footnavbar {
@@ -132,6 +132,5 @@
     flex-wrap: wrap;
   }
 
-  .footnavbar_tab_form {
-  }
+  .footnavbar_tab_form {}
 }
