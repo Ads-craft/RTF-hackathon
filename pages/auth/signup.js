@@ -1,4 +1,4 @@
-import styles from "../../styles/AuthSignin.module.css";
+import styles from "../../styles/AuthSignup.module.css";
 import Link from "next/link";
 
 const index = () => {
@@ -10,25 +10,32 @@ const index = () => {
           <p>Copyright 2024</p>
         </div>
         <div className={styles.formDivContainer}>
-          <div className={styles.formHeader}><p>New to Adcraft?</p>   <Link style={{ textDecoration: "none" }} href="/auth/signup">
-            <button>Create Account</button></Link></div>
-          <h1>Sign in</h1>
+          <div className={styles.formHeader}><p>Already on Adcraft?</p>    <Link style={{ textDecoration: "none" }} href="/auth/signin">
+            <button>Login</button></Link> </div>
+          <h1>Sign up</h1>
           <p>
-            Welcome back to Adcraft.
+            Welcome to Adcraft.
           </p>
-          <div className={styles.mainFormContainer}>
+          <div className={styles.mainFormContainer}>   <div className={styles.inputContainer}>
+            <p>Username</p>
+            <input type="text" placeholder="newuser" />
+          </div>
             <div className={styles.inputContainer}>
               <p>Email Address</p>
               <input type="email" placeholder="example@email.com" />
             </div>
-
             <div className={styles.inputContainer}>
               <p>Password</p>
               <input type="password" placeholder="password" />
             </div>
+            <div className={styles.inputContainer}>
+              <p>Confirm Password</p>
+              <input type="password" placeholder="password" />
+            </div>
+
+
           </div>
-          <p><a href="#">Forgot Password?</a></p>
-          <button type="submit">Log in</button>
+          <button type="submit">Sign up</button>
           <div className={styles.hrContainer}>
             <hr />
             <p>OR</p>
