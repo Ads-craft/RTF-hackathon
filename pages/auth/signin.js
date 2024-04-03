@@ -4,18 +4,27 @@ import Link from "next/link";
 const index = () => {
   return (
     <div className={styles.main_container}>
+      {/* main form parent container*/}
       <div className={styles.main_auth_container}>
+        {/*img section container*/}
         <div className={styles.imgDivContainer}>
           <h1>Adcraft</h1>
           <p>Copyright 2024</p>
         </div>
+
+        {/* form section container */}
         <div className={styles.formDivContainer}>
+          {/* form header container*/}
           <div className={styles.formHeader}><p>New to Adcraft?</p>   <Link style={{ textDecoration: "none" }} href="/auth/signup">
             <button>Create Account</button></Link></div>
+
+          {/* form text section */}
           <h1>Sign in</h1>
           <p>
             Welcome back to Adcraft.
           </p>
+
+          {/* form input  container */}
           <div className={styles.mainFormContainer}>
             <div className={styles.inputContainer}>
               <p>Email Address</p>
@@ -27,21 +36,28 @@ const index = () => {
               <input type="password" placeholder="password" />
             </div>
           </div>
+
+          {/* form section container */}
           <p><a href="#">Forgot Password?</a></p>
+
+          {/* form submit button */}
           <button type="submit">Log in</button>
+
+          {/* line alternative container */}
           <div className={styles.hrContainer}>
             <hr />
             <p>OR</p>
           </div>
+
+          {/* alternative login container */}
           <div className={styles.logoContainer}>
             <img src={"/images/gmail-logo.png"} />
             <img src={"/images/tiktok-logo.png"} />
           </div>
+          {/* useful links container */}
 
           <div className={styles.linksContainer}>
             <a href="#">Terms & Conditions</a>
-            <a href="#">Legal</a>
-            <a href="#">Privacy</a>
           </div>
         </div>
       </div>

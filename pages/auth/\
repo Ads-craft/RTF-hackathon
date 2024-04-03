@@ -1,4 +1,4 @@
-import styles from "../../styles/AuthSignup.module.css";
+import styles from "../../styles/AuthSignin.module.css";
 import Link from "next/link";
 
 const index = () => {
@@ -14,37 +14,34 @@ const index = () => {
 
         {/* form section container */}
         <div className={styles.formDivContainer}>
-          <div className={styles.formHeader}><p>Already on Adcraft?</p>    <Link style={{ textDecoration: "none" }} href="/auth/signin">
-            <button>Login</button></Link> </div>
+          {/* form header container*/}
+          <div className={styles.formHeader}><p>New to Adcraft?</p>   <Link style={{ textDecoration: "none" }} href="/auth/signup">
+            <button>Create Account</button></Link></div>
 
           {/* form text section */}
-          <h1>Sign up</h1>
+          <h1>Sign in</h1>
           <p>
-            Welcome to Adcraft.
+            Welcome back to Adcraft.
           </p>
 
-          {/* form inputs  container */}
+          {/* form input  container */}
           <div className={styles.mainFormContainer}>
-            <div className={styles.inputContainer}>
-              <p>Username</p>
-              <input type="text" placeholder="newuser" />
-            </div>
             <div className={styles.inputContainer}>
               <p>Email Address</p>
               <input type="email" placeholder="example@email.com" />
             </div>
+
             <div className={styles.inputContainer}>
               <p>Password</p>
               <input type="password" placeholder="password" />
             </div>
-            <div className={styles.inputContainer}>
-              <p>Confirm Password</p>
-              <input type="password" placeholder="password" />
-            </div>
           </div>
 
+          {/* form section container */}
+          <p><a href="#">Forgot Password?</a></p>
+
           {/* form submit button */}
-          <button type="submit">Sign up</button>
+          <button type="submit">Log in</button>
 
           {/* line alternative container */}
           <div className={styles.hrContainer}>
@@ -53,15 +50,16 @@ const index = () => {
           </div>
 
           {/* alternative login container */}
-
           <div className={styles.logoContainer}>
             <img src={"/images/gmail-logo.png"} />
             <img src={"/images/tiktok-logo.png"} />
           </div>
-
           {/* useful links container */}
+
           <div className={styles.linksContainer}>
             <a href="#">Terms & Conditions</a>
+            <a href="#">Legal</a>
+            <a href="#">Privacy</a>
           </div>
         </div>
       </div>

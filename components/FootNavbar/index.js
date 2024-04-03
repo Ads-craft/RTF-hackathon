@@ -34,13 +34,13 @@ const index = () => {
               <a href="#">Donate</a>
             </p>
             <p>
-              <a href="#">Sign in</a>
+              <a href="#">Legal</a>
             </p>
             <p>
               <a href="#">Services</a>
             </p>
             <p>
-              <a href="#">How it work's</a>
+              <a href="#">Privacy</a>
             </p>
             <p>
               <a href="#">About</a>
