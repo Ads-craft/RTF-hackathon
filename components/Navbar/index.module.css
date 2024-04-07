@@ -66,10 +66,36 @@
   width: max-content;
   color: var(--color-white);
   cursor: pointer;
-}
+  text-align:center;
+  margin:0px 8px;
+ }
 
 .btn_container_div i {
   margin-right: 8px;
+}
+
+.authed_container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:max-content;
+}
+
+.authed_container .btn_container_div:nth-child(2) i{
+  margin-right:-4px;
+  margin-left:-3px;
+}
+
+.mode_toggle{
+ font-size:30px;
+ color:var(--color-white);
+ margin-left:10px;
+ cursor:pointer;
+ }
+
+ .mode_toggle{
+ transition:0.8s ease-in;
+
 }
 
 .ham_parent_container {

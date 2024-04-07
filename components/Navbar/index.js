@@ -1,10 +1,12 @@
 import Link from "next/link";
 import styles from "./index.module.css";
+import { useRTFStore } from "@/store";
 
 import { useState } from "react";
 
 const index = ({ isTapped, setIsTapped }) => {
   const [isTap, setIsTap] = useState(false);
+  const { isAuth, isDarkmode, setIsDarkmode } = useRTFStore((state) => state);
 
   return (
     <div className={styles.nav_container_div}>
@@ -44,10 +46,19 @@ const index = ({ isTapped, setIsTapped }) => {
 
       {/* wallet btn container */}
 
-      <div className={styles.btn_container_div}>
-        <i className="fa fa-wallet"></i>Connect Wallet
-      </div>
-
+      {!isAuth ? (
+        <div className={styles.btn_container_div}>
+          <i className="fa fa-wallet"></i>Connect Wallet
+        </div>) : (
+        <div className={styles.authed_container}>
+          <div className={styles.btn_container_div}>
+            <b>Create your NFT</b>
+          </div>
+          <div className={styles.btn_container_div}>
+            <i className="fa fa-wallet"></i>
+          </div>
+          <div className={styles.mode_toggle} onClick={() => setIsDarkmode()}>{isDarkmode ? <i className="fa fa-sun"></i> : <i className="fa fa-moon"></i>}</div>
+        </div>)}
       <div
         className={styles.ham_parent_container}
         onClick={() => setIsTapped(!isTapped)}
