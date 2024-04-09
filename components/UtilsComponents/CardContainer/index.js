@@ -1,7 +1,7 @@
 import styles from "./index.module.css";
 import { motion } from "framer-motion";
 
-const index = ({ title, imgUrl, ethPrice, views, likes, is_stake }) => {
+const index = ({ title, imgUrl, ethPrice, views, likes, is_stake, is_staked, }) => {
   return (
     <div className={styles.card}>
       <div className={styles.card_top}>
@@ -17,11 +17,12 @@ const index = ({ title, imgUrl, ethPrice, views, likes, is_stake }) => {
             </div>
             <motion.div whileTap={{ scale: 1.2 }} style={{ outline: "none" }}>
               <div className={styles.card_btn_div}>
-                {is_stake ? "Stake Now" : "Buy"}
+                {is_stake ? "Stake Now" : is_staked
+                  ? "View Gains" : "Buy"}
               </div>
             </motion.div>
           </div>
-          {is_stake && (
+          {is_stake || is_staked && (
             <div className={styles.stats}>
               <p>
                 <i className="fa fa-eye"></i> {views}M Views

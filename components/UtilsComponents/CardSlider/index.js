@@ -39,6 +39,9 @@ const index = ({ data }) => {
                 imgUrl={cardData.imgUrl}
                 ethPrice={cardData.ethPrice}
                 is_stake={cardData.is_stake}
+                is_staked={cardData.is_staked}
+
+
                 likes={cardData.likes}
                 views={cardData.views}
                 key={indx}

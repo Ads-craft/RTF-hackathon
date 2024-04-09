@@ -1,0 +1,68 @@
+.mainContainer{
+  max-width:100%;
+  padding:25px;
+}
+
+.header_banner{
+  width:100%;
+  min-height:100px;
+  padding:10px 20px;
+  border-radius:8px;
+  display:flex;
+  justify-content:left;
+  align-items:center;
+  position:relative;
+  margin-bottom:60px;
+  background:linear-gradient(to right,rgba(95, 216, 255, 0.4),rgba(95, 216, 255, 1));
+}
+
+.header_banner h1{
+  color:var(--color-light-pink);
+}
+
+.header_banner h3{
+  cursor:pointer;
+
+}
+
+.header_banner i{
+  position:absolute;
+  left:50%;
+  top:33%;
+  font-size:35px;
+  cursor:pointer;
+}
+.profile_pic img{
+  width:138px;
+  height:125px;
+}
+
+.profile_pic{
+  border-radius:8px;
+  overflow:hidden;
+  margin-right:30px;width:138px;
+  height:125px;
+
+
+}
+
+.create_btn{
+  padding:10px 40px;
+  color:var(--color-white);
+  border-radius:8px;
+  background:var(--card-color-transparent);
+  margin-top:20px;
+  margin-left:80%;
+  font-size:30px;
+  border:none;
+  cursor:pointer;
+}
+
+@media (max-width:750px){
+  .header_banner{ display:block;}
+
+  .header_banner i{
+    left:80%;
+    
+  }
+}
