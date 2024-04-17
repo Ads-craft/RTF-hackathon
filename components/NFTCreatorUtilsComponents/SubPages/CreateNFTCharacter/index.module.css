@@ -1,0 +1,68 @@
+.createnft_container{
+  text-align:center;
+}
+
+.createnft_container h1{
+  color:var(--color-white);
+  margin:10px auto;
+
+}
+
+.textarea_container{
+  width:80%;
+  color:var(--color-white);
+  padding:4px;
+  height:250px;
+  border-radius: 5px;
+  border: double 2px transparent;
+  border-style: solid;
+  background-image: linear-gradient(var(--card-color-transparent),
+      var(--card-color-transparent)),
+    linear-gradient(var(--card-color), var(--color-light-blue));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  margin:30px auto;
+}
+
+
+
+.textarea_container_2{
+  width:80%;
+  color:var(--color-white);
+  padding:4px;
+  height:500px;
+  border-radius: 5px;
+  border: double 2px transparent;
+  border-style: solid;
+  background-image: linear-gradient(var(--card-color-transparent),
+      var(--card-color-transparent)),
+    linear-gradient(var(--card-color), var(--color-light-blue));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  margin:30px auto;
+}
+
+
+.text_area{
+   width:90%;
+   height:220px;
+   color:var(--color-white);
+   background:transparent;
+   outline:none;
+   margin-top:10px;
+   border:none;
+   font-size:18px;
+   padding:10px;
+}
+
+.create_btn{
+  padding:10px 40px;
+  color:var(--color-white);
+  border-radius:8px;
+  background:var(--card-color-transparent);
+  margin:0px auto;
+  font-size:30px;
+  border:none;
+  cursor:pointer;
+}
+

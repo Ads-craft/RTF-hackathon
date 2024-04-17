@@ -1,0 +1,94 @@
+
+.create_ads_container{
+  text-align:center;
+  padding:0px 20px;
+}
+
+.create_ads_container h1:nth-child(1){
+  color:var(--color-white);
+  text-transform:capitalize;
+  margin-bottom:35px;
+  font-size:45px;
+
+}
+
+.create_ads_container p{
+  color:var(--color-white);
+  font-size:28px;
+}
+
+.ads_selector{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  color:var(--color-white);
+}
+
+.ads_selector div{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-right:20px;
+
+}
+
+.ads_selector input{
+  margin-right:8px;
+  cursor:pointer;
+}
+
+
+.train_container{
+  margin:20px auto;
+  width:60%;
+  height:450px;
+border-radius: 5px;
+  border: double 8px transparent;
+  border-style: solid;
+  background-image: linear-gradient(var(--card-color-transparent),
+      var(--card-color-transparent)),
+    linear-gradient(var(--card-color), var(--color-light-blue));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+
+.text_desc{
+  color:var(--color-white);
+  text-transform:capitalize;
+  font-size:25px;
+  margin:35px 10px;
+}
+
+
+.text_desc span{
+  color:var(--color-light-pink);
+}
+
+
+.textarea_container{
+  width:80%;
+  color:var(--color-white);
+  padding:4px;
+  height:250px;
+  border-radius: 5px;
+  border: double 2px transparent;
+  border-style: solid;
+  background-image: linear-gradient(var(--card-color-transparent),
+      var(--card-color-transparent)),
+    linear-gradient(var(--card-color), var(--color-light-blue));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  margin:30px auto;
+}
+
+.text_area{
+   width:90%;
+   height:220px;
+   color:var(--color-white);
+   background:transparent;
+   outline:none;
+   margin-top:10px;
+   border:none;
+}
