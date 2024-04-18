@@ -10,8 +10,7 @@ export const useRTFStore = create((set) => ({
       isDarkmode: !state.isDarkmode
     }))
   },
-  setNFTCreationStage: ({ stage }) => {
+  setNFTCreationStage: (stage) => {
     set({ nftcreation_stage: stage });
-    alert("hi");
   }
 }));
