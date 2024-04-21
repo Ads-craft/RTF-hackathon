@@ -1,13 +1,20 @@
 import Link from "next/link";
 import styles from "./index.module.css";
 import { useRTFStore } from "@/store";
-
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { ConnectKitButton } from "connectkit";
+import { useAccount } from "wagmi";
 
 const index = ({ isTapped, setIsTapped }) => {
   const [isTap, setIsTap] = useState(false);
-  const { isAuth, isDarkmode, setIsDarkmode } = useRTFStore((state) => state);
+  const { isAuth, isDarkmode, setIsDarkmode, setAuth } = useRTFStore(
+    (state) => state
+  );
+  const { address } = useAccount();
 
+  useEffect(() => {
+    setAuth(address ? true : false);
+  }, [address]);
   return (
     <div className={styles.nav_container_div}>
       {/* logo div */}
@@ -37,28 +44,32 @@ const index = ({ isTapped, setIsTapped }) => {
           </h1>
         </Link>
 
-        <Link style={{ textDecoration: "none" }} href="auth/signin">
+        {/* <Link style={{ textDecoration: "none" }} href="auth/signin">
           <h1>
             <a href="#">Signin</a>
           </h1>
-        </Link>
+        </Link> */}
       </div>
 
       {/* wallet btn container */}
 
       {!isAuth ? (
-        <div className={styles.btn_container_div}>
-          <i className="fa fa-wallet"></i>Connect Wallet
-        </div>) : (
+        <ConnectKitButton />
+      ) : (
         <div className={styles.authed_container}>
           <div className={styles.btn_container_div}>
             <b>Create your NFT</b>
           </div>
-          <div className={styles.btn_container_div}>
-            <i className="fa fa-wallet"></i>
+          <ConnectKitButton />
+          <div className={styles.mode_toggle} onClick={() => setIsDarkmode()}>
+            {isDarkmode ? (
+              <i className="fa fa-sun"></i>
+            ) : (
+              <i className="fa fa-moon"></i>
+            )}
           </div>
-          <div className={styles.mode_toggle} onClick={() => setIsDarkmode()}>{isDarkmode ? <i className="fa fa-sun"></i> : <i className="fa fa-moon"></i>}</div>
-        </div>)}
+        </div>
+      )}
       <div
         className={styles.ham_parent_container}
         onClick={() => setIsTapped(!isTapped)}
