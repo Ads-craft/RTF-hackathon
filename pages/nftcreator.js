@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import ProgressComponents from "../components/NFTCreatorUtilsComponents/ProgressComponents";
 import CreateAds from "../components/NFTCreatorUtilsComponents/SubPages/CreateAds/";
 import CreateNFTCharacter from "../components/NFTCreatorUtilsComponents/SubPages/CreateNFTCharacter/";
+import EPAds from "../components/NFTCreatorUtilsComponents/SubPages/EPAds";
+
 import { useRTFStore } from "@/store";
 
 const index = () => {
@@ -10,11 +12,13 @@ const index = () => {
 
   return (
     <div>
-      <ProgressComponents progressState={nftcreationstage} />
+      <ProgressComponents />
       {nftcreationstage == 1 && <CreateAds />}
 
       {nftcreationstage == 2 && <CreateNFTCharacter />}
-      <h1>Hello world!</h1>
+
+      {nftcreationstage == 3 && <EPAds />}
+
     </div>
   );
 
