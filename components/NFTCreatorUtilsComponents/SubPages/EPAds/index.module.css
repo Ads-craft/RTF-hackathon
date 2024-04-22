@@ -1,0 +1,138 @@
+.ep_main_container i{
+  font-size:30px;
+  color:var(--color-white);
+  cursor:pointer;
+}
+
+.edit_container{
+  padding:5px 60px;
+  display:flex;color:var(--color-white);align-items:center;justify-content:right;width:100%;
+}
+
+.edit_container h1{
+  margin:0px 8px;
+  cursor:pointer;
+}
+
+.form_container{
+  width:80%;
+  height:80%;
+  color:var(--color-white);
+  padding:4px;
+  border-radius: 5px;
+  border: double 2px transparent;
+  border-style: solid;
+  background-image: linear-gradient(var(--card-color-transparent),
+      var(--card-color-transparent)),
+    linear-gradient(var(--card-color), var(--color-light-blue));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  margin:30px auto;
+}
+
+.train_input{
+  margin:30px auto;
+border-radius: 8px;
+  border: double 6px transparent;
+  border-style: solid;
+  background-image: linear-gradient(var(--card-color-transparent),
+      var(--card-color-transparent)),
+    linear-gradient(var(--card-color), var(--color-light-blue));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+max-width:600px;
+width:100%;
+height:70px;
+margin-bottom:30px;
+}
+
+
+
+.create_btn{
+  padding:5px 40px;
+  color:var(--color-white);
+  border-radius:8px;
+  background:var(--card-color-transparent);
+  margin:0px auto;
+  font-size:30px;
+  border:none;
+  cursor:pointer;
+}
+
+.create_btn:nth-child(1){
+padding:2px;
+border-radius: 8px;
+  border: double 2px transparent;
+  border-style: solid;
+  background-image: linear-gradient(var(--card-color-transparent),
+      var(--card-color-transparent)),
+    linear-gradient(var(--card-color), var(--color-light-blue));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+
+
+}
+
+.create_btn span{
+  margin:4px 8px;
+}
+
+.utils_container{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  margin-bottom:30px;
+  margin:30px 350px;
+}
+
+.utils_container i{
+  margin:0 30px;
+  cursor:pointer;
+}
+
+
+
+.train_input input{
+  width:95%;
+  height:60px;
+  padding:10px;
+  margin:auto auto;
+  margin-top:3px;
+  background:transparent;
+  font-size:20px;
+  color:var(--color-white);
+  outline:none;
+  border:none;
+}
+
+
+
+.image_container{
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  margin:0 auto;
+}
+
+
+.image_container .train_input{
+  width:40%;
+  height:200px;
+  display:flex;justify-content:center;align-items:center;
+}
+
+
+.image_container .train_input h1{
+margin:0px 20px;
+}
+
+.image_container .train_input i{
+margin-left:150px;
+}
+
+
+.image_container .train_input input[type="file"]{
+  height:100%;width:100%;
+  opacity:0;
+  cursor:pointer;
+}
