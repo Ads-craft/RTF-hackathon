@@ -19,10 +19,10 @@
   text-align: left;
   padding: 20px 40px;
 }
-
+/* 
 .banner div {
   width: 50%;
-}
+} */
 
 .banner div:nth-child(2) {
   margin-right: 20px;
@@ -46,8 +46,7 @@
 
 .banner_info button {
   background: linear-gradient(var(--color-light-pink), var(--color-light-blue));
-  width: 170px;
-  height: 64px;
+
   border-radius: 8px;
   border: none;
   font-size: 20px;

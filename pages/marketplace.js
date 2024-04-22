@@ -7,6 +7,7 @@ import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 import CreatorCardContainer from "../components/UtilsComponents/CreatorCardContainer/";
 import { sendMsgToAI } from "./utils/openai";
+import { OpenAiModal } from "@/components/modal/OpenAiModal";
 
 const index = () => {
   /* CARD DATA MUST CONTAIN */
@@ -112,10 +113,7 @@ const index = () => {
       setIsMobile(false);
     }
   });
-  const generateAds = async () => {
-    let response = await sendMsgToAI();
-    console.log(response);
-  };
+
   return (
     <div>
       <div className={styles.creator_container}>
@@ -173,7 +171,7 @@ const index = () => {
             provide us with a brief description of what you want it to look
             like,or generate random image.
           </p>
-          <button onClick={generateAds}>Generate Now</button>
+          <OpenAiModal />
         </div>
         <div className={styles.banner_img}>
           <img src={"/wire_head.svg"} />
