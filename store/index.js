@@ -14,10 +14,14 @@ export const useRTFStore = create((set) => ({
       isAuth: auth,
     }));
   },
-      isDarkmode: !state.isDarkmode
-    }))
+
+  setIsDarkmode: () => {
+    set((state) => ({
+      isDarkmode: !state.isDarkmode,
+    }));
   },
+
   setNFTCreationStage: (stage) => {
     set({ nftcreation_stage: stage });
-  }
+  },
 }));
