@@ -7,7 +7,6 @@ const index = ({ progressState }) => {
   const nftCreationStage = useRTFStore((state) => state.nftcreation_stage)
 
   useEffect(() => {
-    alert(nftCreationStage)
   }, [nftCreationStage]);
   return (
     <div className={styles.progress_div}>
@@ -19,7 +18,7 @@ const index = ({ progressState }) => {
         <div className={nftCreationStage >= 2 ? styles.progress_indicators_active : styles.progress_indicators}>2</div> <p>Link Character Selection</p>
       </section>
       <section className={styles.progresshr_section}><hr /></section>
-      <section className={styles.progress_section}>
+      <section onClick={() => setNFTCreationStage(3)} className={styles.progress_section}>
         <div className={nftCreationStage >= 3 ? styles.progress_indicators_active : styles.progress_indicators}>3</div> <p>Edit and Perview</p>
       </section>
 
