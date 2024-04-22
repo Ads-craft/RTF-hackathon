@@ -6,6 +6,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 import CreatorCardContainer from "../components/UtilsComponents/CreatorCardContainer/";
+import { sendMsgToAI } from "./utils/openai";
+import { OpenAiModal } from "@/components/modal/OpenAiModal";
 
 const index = () => {
   /* CARD DATA MUST CONTAIN */
@@ -119,6 +121,7 @@ const index = () => {
           Top<span>Creators</span>
         </h1>
         <Swiper
+          key={isMobile ? "mobile" : "desktop"}
           spaceBetween={isMobile ? 0 : 120}
           slidesPerView={isMobile ? 1 : 3}
           pagination={{ el: ".swiper-pagination", clickable: true }}
@@ -162,13 +165,13 @@ const index = () => {
       </div>
       <div className={styles.banner}>
         <div className={styles.banner_info}>
-          <h1>Create and upload your Ads</h1>
+          <h1>Generate and upload your Ads</h1>
           <p>
             Were excited to bring your nft to life,but we need your input.Please
             provide us with a brief description of what you want it to look
             like,or generate random image.
           </p>
-          <button>Create Now</button>
+          <OpenAiModal />
         </div>
         <div className={styles.banner_img}>
           <img src={"/wire_head.svg"} />

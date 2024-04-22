@@ -1,6 +1,7 @@
 import styles from "./index.module.css";
 import Link from "next/link";
 import { motion, useAnimationControls } from "framer-motion";
+import { ConnectKitButton } from "connectkit";
 
 const index = ({ isTapped }) => {
   const linkVariant = {
@@ -72,7 +73,7 @@ const index = ({ isTapped }) => {
             </Link>
           )}
 
-          {isTapped && (
+          {/* {isTapped && (
             <Link style={{ textDecoration: "none" }} href="auth/signin">
               <motion.h1
                 initial="hidden"
@@ -86,7 +87,7 @@ const index = ({ isTapped }) => {
                 <a href="#">signin</a>
               </motion.h1>
             </Link>
-          )}
+          )} */}
         </div>
 
         {/* wallet btn container */}
@@ -102,9 +103,7 @@ const index = ({ isTapped }) => {
               transition: { delay: 1.2, type: "spring" },
             }}
           >
-            <div className={styles.btn_container_div}>
-              <i className="fa fa-wallet"></i>connect wallet
-            </div>
+            <ConnectKitButton />
           </motion.div>
         )}
       </div>
