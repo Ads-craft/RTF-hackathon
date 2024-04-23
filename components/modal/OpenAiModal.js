@@ -1,4 +1,5 @@
-import { sendMsgToAI } from "@/pages/utils/openai";
+import { sendMsgToAI } from "@/utils/openai";
+
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
