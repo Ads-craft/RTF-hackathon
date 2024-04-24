@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 import CreatorCardContainer from "../components/UtilsComponents/CreatorCardContainer/";
-import { sendMsgToAI } from "./utils/openai";
+import { sendMsgToAI } from "../utils/openai";
 import { OpenAiModal } from "@/components/modal/OpenAiModal";
 
 const index = () => {
